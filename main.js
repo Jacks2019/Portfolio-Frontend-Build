@@ -4567,7 +4567,6 @@ const routes = [
     {
         path: 'auth',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_auth_auth_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./auth/auth.module */ 71674)).then(m => m.NgxAuthModule),
-        canActivate: [_app_routing_guard__WEBPACK_IMPORTED_MODULE_0__.PageGuard]
     },
     // {
     //   path:'ui-features/typography/:ticker', component: TypographyComponent,
@@ -4616,7 +4615,7 @@ const routes = [
     { path: '**', redirectTo: 'pages' },
 ];
 const config = {
-    useHash: false,
+    useHash: true,
 };
 class AppRoutingModule {
 }
